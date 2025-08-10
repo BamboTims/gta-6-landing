@@ -48,7 +48,7 @@ const FirstVideo = () => {
         playsInline
         preload="auto"
         className="first-vd"
-        src={`${import.meta.env.BASE_URL}/videos/output1.mp4`}
+        src={`${import.meta.env.BASE_URL}videos/output1.mp4`}
       />
     </section>
   );
