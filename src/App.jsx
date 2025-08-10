@@ -1,14 +1,15 @@
 import gsap from "gsap";
-import { ScrollToPlugin } from "gsap/all";
+import { ScrollTrigger } from "gsap/all";
+import Hero from "./sections/Hero";
+import NavBar from "./sections/NavBar";
 
-gsap.registerPlugin(ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
   return (
     <main>
-      <dir>
-        <h1 className="text-3xl text-red-300">Wakanda</h1>
-      </dir>
+      <NavBar />
+      <Hero />
     </main>
   );
 };
