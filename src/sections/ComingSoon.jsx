@@ -5,7 +5,7 @@ const ComingSoon = () => {
     <section className="entrance-message">
       <div className="h-full col-center gap-10">
         <img
-          src="/images/logo.webp"
+          src={`${import.meta.env.BASE_URL}images/logo.webp`}
           alt="logo"
           className="entrance-logo"
         />
@@ -17,12 +17,12 @@ const ComingSoon = () => {
 
         <div className="flex-center gap-10">
           <img
-            src="/images/ps-logo.svg"
+            src={`${import.meta.env.BASE_URL}images/ps-logo.svg`}
             className="md:w-32 w-20"
             alt=""
           />
           <img
-            src="/images/x-logo.svg"
+            src={`${import.meta.env.BASE_URL}images/x-logo.svg`}
             className="md:w-52 w-40"
             alt=""
           />

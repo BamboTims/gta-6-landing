@@ -5,8 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { useMaskSettings } from "../../constants";
 
 const Hero = () => {
-  const { initialMaskPos, initialMaskSize, maskPos, maskSize } =
-    useMaskSettings();
+  const { initialMaskPos, initialMaskSize, maskSize } = useMaskSettings();
 
   useGSAP(() => {
     gsap.set(".mask-wrapper", {
@@ -80,23 +79,23 @@ const Hero = () => {
     <section className="hero-section">
       <div className="size-full mask-wrapper">
         <img
-          src="/images/hero-bg.webp"
+          src={`${import.meta.env.BASE_URL}images/hero-bg.webp`}
           className="scale-out"
           alt="background"
         />
         <img
-          src="/images/hero-text.webp"
+          src={`${import.meta.env.BASE_URL}images/hero-text.webp`}
           alt="hero-logo"
           className="title-logo fade-out"
         />
         <img
-          src="/images/watch-trailer.png"
+          src={`${import.meta.env.BASE_URL}images/watch-trailer.png`}
           alt="trailer"
           className="trailer-logo fade-out"
         />
         <div className="play-img fade-out">
           <img
-            src="/images/play.png"
+            src={`${import.meta.env.BASE_URL}images/play.png`}
             alt="play"
             className="w-7 ml-1"
           />
@@ -105,7 +104,7 @@ const Hero = () => {
 
       <div>
         <img
-          src="/images/big-hero-text.svg"
+          src={`${import.meta.env.BASE_URL}images/big-hero-text.svg`}
           alt="logo"
           className="size-full object-cover mask-logo"
         />
@@ -113,7 +112,7 @@ const Hero = () => {
 
       <div className="fake-logo-wr">
         <img
-          src="/images/big-hero-text.svg"
+          src={`${import.meta.env.BASE_URL}images/big-hero-text.svg`}
           className="overlay-logo"
           alt=""
         />
